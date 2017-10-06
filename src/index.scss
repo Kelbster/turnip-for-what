@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+$black: #232722;
+$white: #e8e8e7;
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.farm-component {
+  background: #131915;
+  box-sizing: border-box;
+  color: $white;
+  display: block;
+  height: 100%;
+  position: relative;
+  padding: 40px 60px;
+  font-family: "VT323", monospace;
+  font-size: 16px;
+  letter-spacing: .0833em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  h1 {
+    font-family: inherit;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin: 32px 0;
+  }
+
+  p {
+    font-family: inherit;
+    font-size: 1.25rem;
+    line-height: 1;
+    margin: 0;
+  }
+
+  .farm-container {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 480px;
+  }
+
+  .garden-container {
+    display: flex;
+    margin: 20px 0;
+    padding: 0;
+  }
+
+  button {
+    background: transparent;
+    border: none;
+    color: $white;
+    display: inline-block;
+    font-family: "VT323", monospace;
+    font-size: 1.5rem;
+    margin: 16px 8px 16px 0;
+    padding: 0;
+
+    &:before {
+      content: "[";
+      display: inline-block;
+      margin-right: 4px;
+    }
+
+    &:after {
+      content: "]";
+      display: inline-block;
+      margin-left: 4px;
+    }
+
+    &:hover,
+    &.active {
+      background: $white;
+      color: $black;
+    }
+
+    &:active {
+      background: transparent;
+      color: $white;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+$black: #232722;
+$white: #e8e8e7;
+
+.garden-bed-component {
+  border: 2px solid $white;
+  height: 132px;
+  width: 132px;
+  padding: 8px;
+
+  .garden-bed-flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,52 @@
+$black: #232722;
+$white: #e8e8e7;
+
+.plot {
+  background: #222a23;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin: 2px;
+  position: relative;
+
+  &:hover {
+    background: $white;
+
+    .popper {
+      display: block;
+    }
+  }
+
+  &.planted {
+    background: transparent;
+
+    &:hover {
+      background: $white;
+
+      .crop {
+        background: $black;
+      }
+    }
+  }
+
+  .crop {
+    background: $white;
+    width: 8px;
+    height: 8px;
+    margin: 16px;
+  }
+
+  .popper {
+    background: $white;
+    color: $black;
+    display: none;
+    padding: 0 4px;
+    position: absolute;
+    pointer-events: none;
+    left: 50%;
+    transform: translateY(-150%) translateX(-50%);
+  }
+}
