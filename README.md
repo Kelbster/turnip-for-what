@@ -1,6 +1,6 @@
 # Turnip For What
 
-A farming game
+A tiny demo to test out potential functionality of a React farming game
 
 #### Getting started:
 `npm install` or `yarn`
